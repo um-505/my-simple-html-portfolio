@@ -5,12 +5,12 @@ html {
 body
 {
     background-color: #fffddf;
-    margin: 0px;
+    margin-top: 0rem;
     padding-left: 28px;
     padding-right: 28px;
     font-family: Inter;
     color: black;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 header
@@ -21,6 +21,7 @@ header
 }
 
 #nameAndExperienceAndImage {
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,16 +56,16 @@ header
 }
 
 #myBioDiv {
-    max-width: 68rem;
+    max-width: 60rem;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
 #myGithubClick {
-    width: 200px;
-    height: 75px;
-    background-color: #383838;
+    width: 20rem;
+    height: 7.5rem;
+    background-color: #b8b8b8;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -76,18 +77,20 @@ header
 #myGithubClick a {
     font-size: 1.8rem;
     font-weight: 500;
-    color: #FF5C00;
+    color: #000000;
     text-decoration: none;
 }
 
-#anxietyPFPdiv {
+#mySignatureDiv {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding-left: 10rem;
     justify-content: center;
     align-items: center;
 }
 
-#anxietyPFP {
+#mySignature {
     width: 40rem;
     height: auto;
     border-radius: 2.4rem;
@@ -95,61 +98,143 @@ header
     align-items: center;
 }
 
-#educationAndExperience {
+#imageDisplayBtn {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 0 auto;
+}
+
+#educationAndExperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eduAndExpID {
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    text-align: left;
 }
 
 #Experience {
-    text-align: center;
     margin-top: 6rem;
     font-size: 3.4rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .subHeading {
-    text-align: center;
     font-size: 3.4rem;
-    margin-top: 2rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .eTitle {
-    text-align: center;
     margin-top: 1.5rem;
     font-size: 2.8rem;
     margin-bottom: 0;
 }
 
 .org {
-    text-align: center;
     margin-top: 1rem;
     font-size: 2rem;
     margin-bottom: 0;
+    color: #303030;
+    text-decoration: none;
+}
+
+#jbLink {
+    color: #303030;
+    text-decoration: none;
+}
+
+#arrow {
+    font-size: 1.5rem;
+    vertical-align: baseline;
 }
 
 .eDuration {
-    text-align: center;
     margin-top: 1rem;
     font-size: 1.2rem;
-    color: #494949;
+    color: #5e5e5e;
     margin-bottom: 0;
 }
 
 .eDesc {
     font-size: 1.4rem;
+    text-align: left;
 }
 
 .dDesc {
     margin-top: 1.2rem;
-    max-width: 68rem;
-    margin: 0 auto;
+    max-width: 80rem;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
     text-align: left;
+}
+
+hr {
+    border: none;
+    border-top: 1.6px solid #494949;
+    margin: 3rem 0;
+}
+
+#profilesLinks {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#copyrightAndLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright {
+    padding-left: 6rem;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+#externals {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: right;
+    align-items: right;
+    padding-right: 6rem;
+}
+
+#profilesDiv {
+    text-align: center;
+}
+
+#contactDiv {
+    text-align: center;
+}
+
+.links {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #383838;
+}
+
+#designedBy {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    padding-top: 3.6rem;
+    padding-bottom: 1rem;
 }
 
 @media (max-width: 1168px) {
@@ -158,6 +243,15 @@ header
     }
     header {
         font-size: 3rem;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    #myName {
+        margin-top: 0;
     }
     #myBio {
         text-align: center;
@@ -172,6 +266,42 @@ header
         padding-left: 0;
     }
     #anxietyPFP {
-        width: 50%;
+        width: 45%;
+    }
+    footer {
+        padding: 1rem;
+        
+    }
+}
+
+@media (max-width: 680px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #copyrightAndLinks {
+        flex-direction: column;
+    }
+    #externals {
+        padding: 0;
+    }
+    #copyright {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #externals {
+        flex-direction: column;
+        gap: 1rem;
     }
 }

@@ -262,11 +262,12 @@ footer {
     #nameAndExperienceAndImage {
         flex-direction: column;
     }
-    #anxietyPFPdiv {
+    #mySignatureDiv {
         padding-left: 0;
+        justify-content: center;
     }
-    #anxietyPFP {
-        width: 45%;
+    #mySignature {
+        width: 50%;
     }
     footer {
         padding: 1rem;

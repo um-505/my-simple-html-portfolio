@@ -16,8 +16,13 @@ body
 header
 {
     text-align: center;
-    font-size: 4rem;
-    padding: 1.6rem 2rem;
+    font-size: 2.6rem;
+    padding: 1.6rem 1.2rem;
+    margin-bottom: 0;
+}
+
+#helloPage {
+    font-size: 6rem;
 }
 
 #nameAndExperienceAndImage {
@@ -26,6 +31,12 @@ header
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+}
+
+#eduHeading {
+    font-size: 4.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 #nameAndExperience
@@ -70,7 +81,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1.2rem;
+    border-radius: 4rem;
     margin-top: 4rem;
 }
 
@@ -142,6 +153,31 @@ header
     margin-bottom: 0;
     color: #303030;
     text-decoration: none;
+}
+
+.certTitle {
+    margin-top: 1.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: black;
+}
+
+.certOrg {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    color: #303030;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.certCred {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #5e5e5e;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 #jbLink {
@@ -235,6 +271,85 @@ footer {
     margin: 0 auto;
     padding-top: 3.6rem;
     padding-bottom: 1rem;
+}
+
+#eduPage {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#certifications {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#alphaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    gap: .1rem;
+    text-align: left;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 3.2rem;
+    font-size: 1.6rem;
+}
+
+#projectLink {
+    height: 4rem;
+    width: 10.8rem;
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+#githubLink {
+    height: 4rem;
+    width: 14.8rem;
+    background-color: #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.linkText {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.navBar {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.currentPage {
+    font-size: 20rem;
 }
 
 @media (max-width: 1168px) {

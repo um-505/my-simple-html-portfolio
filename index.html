@@ -9,10 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="assets/um_signature.png">
 </head>
 <body>
     <header>
-        <h1>Uzair Majed's Portfolio</h1>
+        <nav>
+            <a class="navBar" href="index.html" style="font-size: 1.8rem;"><b>Work</b></a>
+            <a class="navBar" href="education.html">Qualifications</a>
+        </nav>
+        <h1 id="helloPage">Hi, I'm Uzair</h1>
     </header>
 
     <main>
@@ -21,9 +26,7 @@
 
             <div id="nameAndExperience">
 
-                <h2 id="myName">
-                    Hi, I'm Uzair.
-                </h2>
+                <h2 id="myName">Uzair Majed</h2>
 
                 <h3 id="myTag">
                     Curious IT & CS Enthusiast
@@ -83,49 +86,36 @@
 
                 </div>
                 
-                <div id="edu">
+                <div id="projects">
 
                     <h2 class="subHeading">
-                        Education
+                        Projects
                     </h2>
 
                     <h3 class="eTitle">
-                        Cambridge International Education Advanced (A) Levels
+                        TMDb Search Website
                     </h3>
 
-                    <h4 class="org">
-                        Self-Taught
-                    </h4>
-
                     <h5 class="eDuration">
-                        Nov 2022 - Nov 2024
+                        August 2025
                     </h5>
 
                     <div class="dDesc">
                         <p class="eDesc">
-                            Completed Cambridge A Levels in Computer Science, Mathematics and Psychology with grades AAB.
+                            Used TMDb's API to create a website that allows you to search for movies and TV shows.
                         </p>
                     </div>
 
-                    <h3 class="eTitle">
-                        Cambridge International Education Ordinary (O) Levels
-                    </h3>
-
-                    <h4 class="org">
-                        Self-Taught
-                    </h4>
-
-                    <h5 class="eDuration">
-                        May 2019 - Nov 2022
-                    </h5>
-
-                    <div class="dDesc">
-                        <p class="eDesc">
-                            Completed Cambridge O Levels with 6 A*s and an A. This took longer than the usual timeframe because of delays in learning due to COVID.
-                        </p>
+                    <div class="links">
+                        <div id="projectLink">
+                            <a class="linkText" href="https://um-tmdb-search.vercel.app/" target="_blank">Live Link</a>
+                        </div>
+                        <div id="githubLink">
+                            <a class="linkText" href="https://github.com/um-505/tmdb-search" target="_blank">GitHub Project</a>
+                        </div>
                     </div>
-
-            </div>
+                    
+                </div>
 
         </div>
     </main>
